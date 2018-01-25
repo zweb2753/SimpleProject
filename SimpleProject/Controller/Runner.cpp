@@ -6,10 +6,10 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#include "Runner.hpp"
+#include "Controller.hpp"
 
 int main()
 {
     Controller app;
-    app.starter();
+    app.start();
 }
