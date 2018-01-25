@@ -17,8 +17,12 @@ Controller :: Controller()
 
 void Controller :: start()
 {
-    for (int index = 0; index < 10; index++)
+    string myName = "Zane Weber";
+    for (int index = 12; index < 31; index++)
     {
-        cout << "This loop has executed " << index + 1 << " times" << endl;
+        cout << index + 1 << endl;
+        cout << myName << endl;
+        cout << myName + " is sitting in class" << + index << endl;
+        
     }
 }
