@@ -12,17 +12,29 @@ using namespace std;
 
 Controller :: Controller()
 {
-    
+    this->specialNumber = 98765;
+    this->favoriteWord = "spork";
 }
 
 void Controller :: start()
 {
-    string myName = "Zane Weber";
-    for (int index = 12; index < 31; index++)
+    for (int index = 0; index < 10; index++)
     {
-        cout << index + 1 << endl;
-        cout << myName << endl;
-        cout << myName + " is sitting in class" << + index << endl;
+       cout << "this has excecuted" << index
+        + 1 << " times" << endl;
         
     }
+    
+    useVector();
 }
+
+void Controller :: useVector()
+{
+    vector<int> numbers;
+    
+    numbers.push_back(specialNumber);
+    cout << "the size of my vector is: " << numbers.size() << endl;
+    numbers.pop_back();
+    cout << "the size of my vector is: " << numbers.size() << endl;
+}
+
